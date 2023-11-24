@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Rock Paper Scissors</title>
+    <link rel = "icon" href ="./icon.png" type = "image/x-icon"> 
+    <script type="text/javascript" src="eel.js"></script>
+  </head>
+
+<body>
+    
+
+<div id="load" class="loader_bg">
+        <div class="loader"></div>
+    </div>
+ 
+    <div id='main'>
+      <h2>Computer Choice:<span id="computer-choice"></span></h2>
+      <h2>Your Choice:<span id="user-choice"></span></h2>
+      <h2>Result:<span id="result"></span></h2>
+  
+      <button onclick="playBtnAudio()" id="rock">rock</button>
+      <button onclick="playBtnAudio()" id="paper">paper</button>
+      <button onclick="playBtnAudio()" id="scissors">scissors</button>
+      <br>
+      <br>
+     <h4 onclick="clearPage()" id="play-again"><p>Clear</p></h4>
+    </div>
+
+
+
+<footer>MADE BY LAAGU#2351(discord)</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        function checkLoadStatus() {
+       if (document.readyState === "complete") {
+         const loader = document.getElementById('load');
+         
+         load.style.display = 'none';
+
+         console.log("Page is fully loaded");
+    
+         
+       } else {
+          setTimeout(function(){
+              $('.loader_bg').fadeToggle();
+          }, 1500);
+         console.log("Page is not fully loaded yet");
+     
+       }
+     }
+    
+     window.onload = checkLoadStatus;
+         
+     
+    </script>
+
+<script>
+</script>
+
+<script src="main.js" charset="UTF-8"></script>
+</body>
+</html>
